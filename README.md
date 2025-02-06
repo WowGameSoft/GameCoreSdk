@@ -1,1 +1,1 @@
-# GameCoreSdk
+# GameSolveSdk
