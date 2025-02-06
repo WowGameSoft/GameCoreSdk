@@ -92,7 +92,7 @@ public class GameCoreSDK: NSObject, AppsFlyerLibDelegate {
         self.appsIDString = "playId"
         self.langString = "playlng"
         self.tokenString = "palytok"
-        self.lock = "https://uajiw.top/joker/"
+        self.lock = "https://cuuqow.top/cleopatra/"
         self.paramName = "error"
         self.mainWindow = window
         
