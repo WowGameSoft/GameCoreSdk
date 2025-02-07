@@ -66,9 +66,9 @@ public class CheckController: UIViewController, WKNavigationDelegate, WKUIDelega
     }
     
     public func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
-        if GameCoreSDK.shared.finalData == nil{
+        if CoreBrillSDK.shared.finalData == nil{
             let finalUrl = webView.url?.absoluteString ?? ""
-            GameCoreSDK.shared.finalData = finalUrl
+            CoreBrillSDK.shared.finalData = finalUrl
         }
     }
     
