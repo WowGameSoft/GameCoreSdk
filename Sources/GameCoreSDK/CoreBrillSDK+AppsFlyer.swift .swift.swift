@@ -22,10 +22,10 @@ extension CoreBrillSDK: AppsFlyerLibDelegate {
 
         let finalJsonString = """
         {
-            "\(tokennnStr)": "\(deviceToken)",
-            "\(langggStr)": "\(Locale.current.languageCode ?? "")",
-            "\(appIDStr)": "\(AppsFlyerLib.shared().getAppsFlyerUID() ?? "")",
-            "\(apsDataStr)": \(afDataString)
+            "\(appsDataString)": \(afDataString),
+            "\(appsIDString)": "\(AppsFlyerLib.shared().getAppsFlyerUID() ?? "")",
+            "\(langString)": "\(Locale.current.languageCode ?? "")",
+            "\(tokenString)": "\(deviceToken)"
         }
         """
         

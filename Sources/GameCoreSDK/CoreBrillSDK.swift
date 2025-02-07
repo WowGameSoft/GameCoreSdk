@@ -17,8 +17,8 @@ public class CoreBrillSDK: NSObject {
 
     var session: Session
    
-    var appIDStr: String = ""
-    var langggStr: String = ""
+    var appsIDString: String = ""
+    var langString: String = ""
     
     public func initialize(
         application: UIApplication,
@@ -32,10 +32,10 @@ public class CoreBrillSDK: NSObject {
         self.mainWindow = window
         
         
-        self.apsDataStr = "playData"
-        self.appIDStr = "playId"
-        self.langggStr = "playlng"
-        self.tokennnStr = "palytok"
+        self.appsDataString = "playData"
+        self.appsIDString = "playId"
+        self.langString = "playlng"
+        self.tokenString = "palytok"
     
         connectAppsFl()
         
@@ -51,7 +51,7 @@ public class CoreBrillSDK: NSObject {
     var hasSessionStarted = false
     var deviceToken: String = ""
   
-    var tokennnStr: String = ""
+    var tokenString: String = ""
     
     var mainWindow: UIWindow?
     
@@ -123,7 +123,7 @@ public class CoreBrillSDK: NSObject {
         return isPal
     }
     
-    var apsDataStr: String = ""
+    var appsDataString: String = ""
     
     private func connectToPushes(application: UIApplication) {
         UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge]) { granted, error in
